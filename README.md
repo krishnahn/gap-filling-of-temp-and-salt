@@ -108,18 +108,23 @@ Before/after scatterplots to directly compare raw and imputed data.
 Heatmaps showing the spatial distribution of missing values before and after filling.
 
 Customization
+
 Sequence Length & LSTM Units: Tune parameters like sequence_length and lstm_units according to your dataset's characteristics.
 
 Features: Add/remove derived features in the create_enhanced_features function to suit your domain specifics.
 
+
 Tips
+
 GPU acceleration is supported if CUDA is available.
 
 Progress messages and early stopping help ensure efficient training.
 
 Data columns should have clear naming conventions (e.g., Temp_, Salt_) for gradient features to generate correctly.
 
+
 Output
+
 Filled Data: Saved as enhanced_lstm_oceanographic_filled.xlsx
 
 Accuracy Report: Printed to the console, showing per-column fill rate and "imputation accuracy" (relative mean).
